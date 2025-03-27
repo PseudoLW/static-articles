@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Art of Worldbuilding</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      font-family: "Roboto Mono", monospace;
+      /* font-optical-sizing: auto; */
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    @font-face {
+      font-family: 'EncryptedFont';
+      src: url('data:font/ttf;base64,T1RUTwAJAIAAAwAQQ0ZGIFHzzOwAAAagAAAaiU9TLzJxymcpAAABAAAAAGBjbWFwDxcQzgAABGwAAAIUaGVhZCv5NdAAAACcAAAANmhoZWEIZALiAAAA1AAAACRobXR4LnMAAAAAISwAAAD8bWF4cAA/UAAAAAD4AAAABm5hbWVxX/OWAAABYAAAAwlwb3N0AAMAAAAABoAAAAAgAAEAAAABAACYTBQ7Xw889QADCAAAAAAA5Ap2MQAAAADkCnYxAAD+SwTNBisAAAADAAIAAAAAAAAAAQAACGL91QAABM0AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAD8AAFAAAD8AAAADBM0B9AAFAAACigK7AAAAjAKKArsAAAHfADEBAgAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAABYWFhYAEAAMAB6CGL91QAABisBtQAAAAEAAAAAAAAETgAAAAAAAAAAACIBngABAAAAAAAAAAEABgABAAAAAAABABQAAAABAAAAAAACAAcAPAABAAAAAAADAB4BEQABAAAAAAAEABwAUQABAAAAAAAFAAsA8AABAAAAAAAGABkApQABAAAAAAAHAAEABgABAAAAAAAIAAEABgABAAAAAAAJAAEABgABAAAAAAAKAAEABgABAAAAAAALAAEABgABAAAAAAAMAAEABgABAAAAAAANAAEABgABAAAAAAAOAAEABgABAAAAAAAQABQAAAABAAAAAAARAAcAPAADAAEECQAAAAIAIAADAAEECQABACgAFAADAAEECQACAA4AQwADAAEECQADADwBLwADAAEECQAEADgAbQADAAEECQAFABYA+wADAAEECQAGADIAvgADAAEECQAHAAIAIAADAAEECQAIAAIAIAADAAEECQAJAAIAIAADAAEECQAKAAIAIAADAAEECQALAAIAIAADAAEECQAMAAIAIAADAAEECQANAAIAIAADAAEECQAOAAIAIAADAAEECQAQACgAFAADAAEECQARAA4AQ1JvYm90byBNb25vIFNodWZmbGVkAFIAbwBiAG8AdABvACAATQBvAG4AbwAgAFMAaAB1AGYAZgBsAGUAZFJlZ3VsYXIAUgBlAGcAdQBsAGEAclJvYm90byBNb25vIFNodWZmbGVkIFJlZ3VsYXIAUgBvAGIAbwB0AG8AIABNAG8AbgBvACAA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') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .encrypted {
+      font-family: 'EncryptedFont', monospace;
+      border: 1px solid lightcoral;
+      color: darkred;
+    }
+
+    p:not(.encrypted) {
+      border: 1px solid white;
+    }
+
+    .container {
+      margin: 20px 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>The Art of Worldbuilding</h1>
+    <p>
+      Imagine you're an artist, but instead of painting pictures or drawing designs, you're creating an entire world.
+      Sounds exciting, right? This is what worldbuilding is all about! It's the process of inventing a brand-new world,
+      full of places, creatures, and ideas that don't exist in our reality. Think of your favorite books, movies, or
+      video games. Every time you watch a movie like Harry Potter or play a game like Minecraft, you're stepping into a
+      world that someone built from scratch. Worldbuilding is how they do it!
+    </p>
+    <p>
+      But how do you build a world? Let's take a journey through the steps, and by the end, you'll be ready to create
+      your own fantastic world.
+    </p>
+
+    <h2>1. Start with the Basics: The Setting</h2>
+    <p>
+      Every world starts with a place. This is the setting—where everything happens. You have to decide whether your
+      world is a magical forest, a futuristic city, or even a whole new planet!
+    </p>
+    <ul>
+      <li>Is it a forest with trees that can talk?</li>
+      <li>Does it have huge, glowing cities in the sky?</li>
+      <li>Or maybe there are underwater kingdoms with fish people?</li>
+    </ul>
+    <p>
+      Think about where your world is located, and how big it is. Does it have just one country, or is it filled with
+      different continents, islands, and mysterious lands? The setting of your world is like the stage where all the
+      action happens.
+    </p>
+
+    <h2>2. Create the Rules: The Magic and Science</h2>
+    <p>
+      Every world has its own set of rules. In the real world, we follow rules like gravity (which keeps us from
+      floating into space!) and the laws of nature. But in your world, you can decide what rules exist.
+    </p>
+    <ul>
+      <li>Are there wizards who can control fire?</li>
+      <li>Do robots help people with everyday tasks?</li>
+      <li>Maybe animals talk and walk like humans!</li>
+    </ul>
+    <p>
+      The magic or technology in your world is super important because it shapes how people live. Do they use magic to
+      fly, or do they have flying cars powered by science? The way the world works—whether it's through magic, science,
+      or something else—helps make the world feel special and exciting.
+    </p>
+
+    <h2>3. Build the People: The Inhabitants</h2>
+    <p>
+      Now that you have a setting and rules, it's time to think about the people who live in your world. Are they
+      humans, or are they strange creatures you've invented? What do they look like? Do they have wings, scales, or
+      super strength?
+    </p>
+    <p>
+      You'll also want to think about what these inhabitants do every day. What jobs do they have? What do they eat? How
+      do they live?
+    </p>
+    <ul>
+      <li>Do they live in tree houses?</li>
+      <li>Maybe they ride on giant animals instead of cars?</li>
+      <li>Or maybe they have unique customs and celebrations.</li>
+    </ul>
+    <p>
+      Your world's inhabitants could be anything you dream up! They could be peaceful and friendly or fierce and strong.
+      The possibilities are endless!
+    </p>
+
+    <h2>4. History and Traditions: Where Did They Come From?</h2>
+    <p>
+      Every world has a history. This is where you can get creative and tell stories about how your world came to be.
+      Did a huge battle take place between two powerful groups? Did a magical disaster change everything forever? The
+      history of your world gives it depth and makes it feel real.</p>
+    <p>
+      Think about the traditions in your world too. Do people celebrate festivals? Maybe there's a special holiday where
+      everyone gives thanks to the magical creatures in the forest. Traditions help show the personality of the people
+      and make the world feel more alive.</p>
+
+    <h2>5. The Adventure: What Happens in Your World?</h2>
+    <p>
+      Once you've created a place, the rules, the people, and the history, it's time to think about what happens in your
+      world. What's the big adventure or story? Maybe your characters are going on a quest to find a lost treasure, or
+      maybe they're trying to stop an evil villain from taking over the world.</p>
+    <ul>
+      <li>Do they fight dragons?</li>
+      <li>Maybe they have to solve mysteries to save their village?</li>
+    </ul>
+    <p>
+      Your worldbuilding should be filled with fun and exciting things for characters to do. This helps make your world
+      come to life, and it gives you plenty of ideas for stories.
+    </p>
+
+    <h2>6. Details Matter: Small Touches Bring Your World to Life</h2>
+    <p>
+      Sometimes, it's the little things that make your world feel real. You don't have to explain everything at once,
+      but details like what people wear, the kind of food they eat, and the animals they care for add flavor to your
+      world. What's the weather like? Does it rain fire in certain places, or does it always snow? What kind of music do
+      people listen to, or what games do kids play?
+    </p>
+    <p>
+      These details might seem small, but they help to make your world feel like a real place, and they make it exciting
+      for people to visit—whether they're reading your story or imagining your world in their heads.
+    </p>
+    <p class="encrypted">
+      7UR iRmd J2Id 2iaXd VaI9hiXA9hAgH Am dU2d dURIR 2IR ga 9AbAdm. EaX Q2g 9Rd SaXI Ab2HAg2dAag IXg VA9h! w2SiR SaXI
+      VaI9h Am 9A3R 2 HA2gd J92SHIaXgh VURIR 2gSdUAgH Q2g U2JJRg. EaX Q2g bAO daHRdURI R9RbRgdm LIab hALLRIRgd dSJRm aL
+      VaI9hm: 2 b2HAQ29 QAdS Ag dUR Q9aXhm, 2 UAhhRg Am92gh LX99 aL hAgam2XIm, aI 2 UAHU-dRQU VaI9h VAdU Iaiadm 2gh
+      L9SAgH Q2Im. 4gSdUAgH SaX hIR2b XJ Q2g iR J2Id aL SaXI VaI9h.
+    </p>
+    <p class="encrypted">
+      FaI9hiXA9hAgH Am 2 V2S da mU2IR SaXI QIR2dAnAdS 2gh iXA9h 2 VaI9h LX99 aL VaghRI. EaX HRd da hRQAhR UaV RnRISdUAgH
+      VaI3m, VUa 9AnRm dURIR, 2gh VU2d 3Aghm aL mdaIARm d23R J92QR. 7UR baIR SaX dUAg3 2iaXd dUR hRd2A9m—9A3R VURIR SaXI
+      VaI9h Am, VUa 9AnRm dURIR, 2gh VU2d 2hnRgdXIRm dURS U2nR—dUR baIR IR29 Ad VA99 LRR9.
+    </p>
+    <p class="encrypted">
+      CRbRbiRI, dURIR'm ga VIagH V2S da iXA9h 2 VaI9h. FURdURI SaXI VaI9h Am LX99 aL d293AgH 2gAb29m, L9SAgH Q2md9Rm, aI
+      Qaa9 Iaiadm, Ad'm 299 XJ da SaX! ea HI2i SaXI Ab2HAg2dAag, md2Id m3RdQUAgH aXd SaXI AhR2m, 2gh QIR2dR 2 VaI9h
+      dU2d'm 2m ROQAdAgH 2m SaX V2gd Ad da iR. t2JJS VaI9hiXA9hAgH!
+    </p>
+  </div>
+</body>
+
+</html>
