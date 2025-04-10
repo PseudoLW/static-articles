@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scoretaking: Grade 5/Word</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <style>
+    @font-face {
+      font-family: 'EncryptedFont';
+      src: url('data:font/ttf;base64,T1RUTwAJAIAAAwAQQ0ZGIJzZs4wAAAagAAAd7k9TLzJzP2t3AAABAAAAAGBjbWFwDxcQzgAABGwAAAIUaGVhZCweD+YAAACcAAAANmhoZWEIZALiAAAA1AAAACRobXR4LnMAAAAAJJAAAAD8bWF4cAA/UAAAAAD4AAAABm5hbWVxX/OWAAABYAAAAwlwb3N0AAMAAAAABoAAAAAgAAEAAAABAAD/TINqXw889QADCAAAAAAA5BzjPAAAAADkHOM8AAD+SwTNBisAAAADAAIAAAAAAAAAAQAACGL91QAABM0AAAAAAAAAAQAAAAAAAAAAAAAAAAAAAD8AAFAAAD8AAAADBM0B9AAFAAACigK7AAAAjAKKArsAAAHfADEBAgAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAABYWFhYAEAAMAB6CGL91QAABisBtQAAAAEAAAAABE4FwwAAAAAAAAAAACIBngABAAAAAAAAAAEABgABAAAAAAABABQAAAABAAAAAAACAAcAPAABAAAAAAADAB4BEQABAAAAAAAEABwAUQABAAAAAAAFAAsA8AABAAAAAAAGABkApQABAAAAAAAHAAEABgABAAAAAAAIAAEABgABAAAAAAAJAAEABgABAAAAAAAKAAEABgABAAAAAAALAAEABgABAAAAAAAMAAEABgABAAAAAAANAAEABgABAAAAAAAOAAEABgABAAAAAAAQABQAAAABAAAAAAARAAcAPAADAAEECQAAAAIAIAADAAEECQABACgAFAADAAEECQACAA4AQwADAAEECQADADwBLwADAAEECQAEADgAbQADAAEECQAFABYA+wADAAEECQAGADIAvgADAAEECQAHAAIAIAADAAEECQAIAAIAIAADAAEECQAJAAIAIAADAAEECQAKAAIAIAADAAEECQALAAIAIAADAAEECQAMAAIAIAADAAEECQANAAIAIAADAAEECQAOAAIAIAADAAEECQAQACgAFAADAAEECQARAA4AQ1JvYm90byBNb25vIFNodWZmbGVkAFIAbwBiAG8AdABvACAATQBvAG4AbwAgAFMAaAB1AGYAZgBsAGUAZFJlZ3VsYXIAUgBlAGcAdQBsAGEAclJvYm90byBNb25vIFNodWZmbGVkIFJlZ3VsYXIAUgBvAGIAbwB0AG8AIABNAG8AbgBvACAAUwBoAHUAZgBmAGwAZQBkACAAUgBlAGcAdQBsAGEAclJvYm90b01vbm9TaHVmZmxlZFJlZ3VsYXIAUgBvAGIAbwB0AG8ATQBvAG4AbwBTAGgAdQBmAGYAbABlAGQAUgBlAGcAdQBsAGEAclZlcnNpb24gMC4xAFYAZQByAHMAaQBvAG4AIAAwAC4AMSA6Um9ib3RvIE1vbm8gU2h1ZmZsZWQgUmVndWxhcgAgADoAUgBvAGIAbwB0AG8AIABNAG8AbgBvACAAUwBoAHUAZgBmAGwAZQBkACAAUgBlAGcAdQBsAGEAcgAAAAAAAAEAAwABAAAADAAEAggAAAB+AEAABQA+ADAAMQAyADMANAA1ADYANwA4ADkAQQBCAEMARABFAEYARwBIAEkASgBLAEwATQBOAE8AUABRAFIAUwBUAFUAVgBXAFgAWQBaAGEAYgBjAGQAZQBmAGcAaABpAGoAawBsAG0AbgBvAHAAcQByAHMAdAB1AHYAdwB4AHkAev//AAAAMAAxADIAMwA0ADUANgA3ADgAOQBBAEIAQwBEAEUARgBHAEgASQBKAEsATABNAE4ATwBQAFEAUgBTAFQAVQBWAFcAWABZAFoAYQBiAGMAZABlAGYAZwBoAGkAagBrAGwAbQBuAG8AcABxAHIAcwB0AHUAdgB3AHgAeQB6//8ABQAFAAUABQAFAAUABQAFAAUABf/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/wP/A/8D/uv+6/7r/uv+6/7r/uv+6/7r/uv+6/7r/uv+6/7r/uv+6/7r/uv+6/7r/uv+6/7r/uv+6AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEABAEAAQEBGlJvYm90b01vbm9TaHVmZmxlZFJlZ3VsYXIAAQEBRPgbAPgcAvgdA/geBIv8SRwIYhwEzQUdAAABUA8dAAABzRGLHQAAHe4SHgoABIgoEl8eDx4PHgoABIgoEl8eDx4PDAcAQgEBDCg8Q0RFRkdISUpLTE1OT1BRUlNUVVZXWFlaW1xdXl9gYWJjZGVmZ2hpamtsbW5vcHFyc3R1dnd7foGGio6RlpufVmVyc2lvbiAwLjFSb2JvdG8gTW9ubyBTaHVmZmxlZCBSZWd1bGFyUm9ib3RvIE1vbm8gU2h1ZmZsZWRSZWd1bGFyQUJDREVGR0hJSktMTU5PUFFSU1RVVldYWVphYmNkZWZnaGlqa2xtbm9wcXJzdHV2d3h5enplcm9vbmV0d290aHJlZWZvdXJmaXZlc2l4c2V2ZW5laWdodG5pbmUAAAABiwGMAY0BjgGPAZABkQGSAZMBlAGVAZYBlwGYAZkBmgGbAZwBnQGeAZ8BoAGhAaIBowGkAaUBpgGnAagBqQGqAasBrAGtAa4BrwGwAbEBsgGzAbQBtQG2AbcBuAG5AboBuwG8Ab0BvgG/AcABwQHCAcMBxAHFAcYBxwHIAD8CAAEABQAJADcA+AEkAYABhALBA10D1gQQBBQExgTKBg4HBgcKBw4IrwizCgAKBAuEC4gLvAzjDR0NRA2ADiAP1g/aD94P4g/mD+oRExK8E1gTXBQNFP8VAxUHFQsVVRVZFxsXXBdgGQkZTRlRGVUZWRmbGc8Z0xnXGdsaiRqNG58cBM0OHATNDhwEze36zhX4Uf7OBfchiwX4TfrOBftRiwX7w/3EBXlIBXrOBfvK+cQF+1KLBQ4cBM34+PrOFYv3mgX7TosFi/uaBfuwiwWL+yMF97CLBYv84AWLSJRSnV0InFyjZKpuCIuLBaptr3W1fgi0fbiEu4sIi4sFqIuojKiOCKiOpo+lkAiLiwWlkKORoZIIoZKek5qUCIuLBXH3FwWAiHyIeogIeYd4h3eICIuLBXaIdoh2iQh2iHaKd4sIi4sFcItxjnOSCHKSdpZ4nAiLiwV4m32hgKYIgKaGrou1CIuLBYv44AX4MIsFi/cjBfwwiwUOHATN+VYcBRIV+FaLBYv3MgX+zIsFi/syBfhWiwWLHPruBfdIiwWLHAUSBQ4cBM27+s4V93r+zgX3JosF9zv5KwWm9zwFp/s8Bfc9/SsF9yaLBfd6+s4F+ziLBfsM/UYFcPs+BW73PgX7QPlGBfsLiwX7Qf1GBXD7LwV19y8F+xL5RgX7OIsFDhwEzQ4cBM33QfrOFYsc+iYF902LBYv4nAWYfJp+mn8Imn6cgJyBCIuLBah7q3+vggiugrKHtIsIi4sFz4vImcCnCMCnt7KvvAiLiwWvvKbFns8Ins6U04vYCIuLBYugBYvcgtV4zwh4znDFZ7wIi4sFZ7xesVamCFamTZlGiwiLiwVki2aHaYMIaIJsf297CIuLBXeAeH96fAh6fHt6fHgIi4sFgvcKBfs9iwX5bfyoFYuLBYt2BYtWhVmAWwh/W3lhc2YIi4sFc2ZsbmZ2CGZ1XoBYiwiLiwVri26PcZMIcJNzlnaZCIuLBXiXe5p8nAh8nH6egJ8Ii4sFi/idBZiimZ+cngicnp6aoJgIi4sFnpihlKSSCKOSpY6oiwiLiwW/i7iAsHYIsHaqbqRnCIuLBaNmnWGXXAiWW5FZi1YIDhwEzfmI+s4V/L2LBYv7NQX4BIsFi/2NBfwEiwWL+zQF+h6LBYv3NAX79YsFi/ouBftl97AVi4sFi22Ucp53CJ13p4GwiwiLiwWwi6aVnp8Inp+UpIupCIuLBYuciJqGmQiGmYOXgJQIi4sFgpSAkn6QCH6Qe416iwiLiwV6i3uJfoYIfYaAhIKCCIuLBYCBhH+GfQiGfYh8i3sIDhwEzfoH+uIVi4sFPItFek5pCE1oVlxfUAiLiwWKpgWD9yUF+0SLBYv+zgX3TosFi/lKBZesmqqepgidpqChpJ4Ii4sFpqCrnLCWCLCWtJC4iwiLiwWui62JrIgIq4etha+DCIuLBaT3SQV4k3CRZpAIZpBnjWmLCA4cBM36JIsV90OLBYscBbAF+0OLBYv9BgX86YsFi/kGBftCiwWLHPpQBfdCiwWL+TUF+OmLBYv9NQUOHATNDhwEzff7+i0Vi4sFi/j7BftNiwWLHPoABfdNiwWL+aYFmKCbn5ydCJycnZufmAiLiwWknKeZqZQIqZSrkKyLCIuLBbSMr4WqgAiqf6V5oHQIi4sFnnaacJVrCJVqkGaLYAiLiwWL/T8F902LBYv5PQWL1ILKesAIecBytmquCIuLBWquZKRdnAhcm1iTUosIi4sFYIpihWV/CGR/aHlrdAiLiwV3fXh7eXkIeXh7d3x1CA4cBM0OHATN95z6aBWG8QX7OosFi/7OBfdEiwWL+fEFj5aQlZKUCJGUkpSUkgiLiwWWlJmTnJAIm5CejaGLCIuLBZ+LnImbhgiahpeDlYAIi4sFloCTfJB6CJB6jXeLdAiLiwWL/b8F90SLBYv5vgWLj4uPi44Ii46LjouOCIuLBY2cj5qRmQiRmJOXlpYIi4sFlpWYk5uRCJuRno6hiwiLiwWgi52Im4YImoaYg5aACIuLBZWAk3yQegiQeo53i3QIi4sFi/2+BfdEiwWL+bwFi7+FuH+yCH+xeqp0owiLiwV2oHKcbZYIbZZpkGaLCIuLBXCKcoh0hAh0hHaCeIAIi4sFfIF+f35+CH5+gHyCfAiLiwWEnIKagZgIgJiAl36UCIuLBXqXd5R0kgh0kXGObosIi4sFWIpggGh2CGd2bm11ZQiLiwUOHATN9x/4uhWLiwWLdgWLPpVDoEgIoEioULBaCIuLBbBauWTAbwjAb8Z9zIsIi4sFzovFlr2iCL2itqyvtwiLiwWT+wYF9z6LBYscBgAF+02LBYv8xQVotGGrW6EIWqBTlkqLCIuLBUmLT31WcAhWcF1lZloIi4sFZVpuUXdICHZHgUGLOgj3TXYVi4sFi6AFi8CRvZa7CJa6nbWjsAiLiwWir6qosKAIsKC3lr+LCIuLBciLvX20bwi0bqtno18Ii4sFi/yKBXNca2Vibwhib1h9TYsIi4sFWItflmagCGagbad0rwiLiwVzr3m1gLoIgLqFvYvACA4cBM0OHATNDhwEzfoJixWLiwX3VYsFi5sFf6mCroS0CISziLGLrwiLiwWL+IsFi8iAwHW4CHW4bbFlqgiLiwVkqV6iVpoIVppSkk6LCIuLBUiLToJXeAhWeF5zZm0Ii4sFZmxuaXhlCHdlgWSKZAiLiwX3TosFi6KRoZagCJagmp2fmgiLiwWfmqOYqZQIqJSrkLCLCIuLBbKLr4argQiqgaZ9oXkIi4sFoXicdZdxCJdxkW6LagiLiwWLNgX7XosFQItHhE58CE58VnVgbgiLiwVgbWlmdF4Ic15/V4tQCIuLBYtelGGdZAicZKRprG8Ii4sFq26ydbp6CLl6v4PEiwiLiwWui62PqpIIqpKplaeYCIuLBaaYpZminAiinJ+cnp4Ii4sFjXSOdpB2CI92kXmSfQj72/chFYuLBWeLa5BwlAhwlHSYeZwIi4sFeZt+noKiCIKihqOLpgiLiwWLp5CklqEIlaGanp+bCIuLBaeisZy7lgi6lsOQy4sIi4sF90CLBYv7bwWAdn12eHgIeHd1eXJ8CIuLBXF8bn5sgghsgmmGZ4sIDhwEzQ4cBM33QBwFsBWLHPpQBfhmiwXJjMeUxp4IxZ6+priuCIuLBbiurramvwimv5jHis8Ii4sFi7aFtH6wCH6weK10qQiLiwV1pm+kaaIIaaJommaUCIuLBYuOBa6aqZylnAiknKGhoKQIi4sFn6Sbp5eqCJaqka6MsQiLiwWMz37FcLwIcLxos16qCIuLBV6qWKNSmghSmlCST4wIi4sF/EWLBfdOHPrtFYv4oAX3u4sFsoqwhK1/CK1/qXqkdQiLiwWkdJ9wmmsImWuSZopiCIuLBYtig2d8awh7a3ZwcHUIi4sFcHVtemh/CGh+Z4VkigiLiwX7sYsF95b5OhX7losFi/hjBfeRiwWviq6HroIIrYKpfqZ5CIuLBaV4oHSbbgiabpNpi2IIi4sFi2WDantuCHtudnNxeAiLiwVxd218aoEIaoBphmiKCIuLBQ4cBM0OHATN+tf4pRWLiwWLoAWLxIbBgr4Igr59uXm1CIuLBXqwd610qgh0qXKlbqAIi4sFa6JnnGSYCGSYYJFciwiLiwVmi2iHa4QIa4RugHB9CIuLBXaAd314fAh4e3p5fHgIi4sFi/jOBftNiwWLHPoABfc+iwWU9w8Fl3yYfZh+CJh+mYCagAiLiwWqdq16soAIsYC1hbqLCIuLBbSLsZCulQiulauZqJ0Ii4sFtKWurKizCKiyoridvQiLiwWYsZa0krcIkraOuYu6CPtNoBWLiwWLdgWLa4lsh2wIh2yFb4JwCIuLBYBofWt5bgh5bnV0cHgIi4sFd3x0gHKECHKDb4dsiwiLiwVri26PcJQIcJNzl3aaCIuLBXaaeJ17oAh6n32hf6MIi4sFi/htBZajmaGcoAibn56doJoIi4sFoJqilqaUCKaTqI+riwiLiwWoi6aIo4QIo4Shgp5/CIuLBad6o3Sebgiebptql2gIi4sFlG6RbZBrCI9qjWqLaQgOHATNDhwEzfoWixX3UIsFixwFsAX7T4sFiP7SBfzJ+tIF+1CLBYsc+lAF90+LBY761AX4yf7UBQ4cBM35D/cWFYuLBVGLW5dkoghkomupdLAIi4sFc7B6tIG6CIC5hrqLugiLiwWLtQWLupC5lrkIlbmctaOwCIuLBaOwq6iyowiyoruWxIsIi4sFsIuuhax+CKt+p3qidQiLiwWidZ5ymW4ImG6SbIxqCIuLBfdDiwWLwoC+dbsIdbtttWSuCIuLBWSuXKZWoAhVn1CVS4sIi4sFOYtDfE5uCE5uWGNiWgiLiwViWWxRdkoIdkqBRotECIuLBYthBYtDlUagSwigSqpRtFoIi4sFtFm+Y8huCMhu03zdiwiLiwXEi8KVwJ8IwJ65prSsCIuLBbSsq7Gktwijtpe5jLsIi4sF+0OLBYptg299cgh8cXd1cngIi4sFcnhvfGyACGuAaoZqiwgOHATN+AP5NRX49IsFi/cxBfz0iwWL+GgF+VCLBYv3MgX+CYsFixz6UAX6EosFi/cxBf1ZiwWL+JgFDhwEzfiBixX47xwFSAWL8wX+bIsFi/s2BfmoiwX87Rz68gX3VosFDhwEzfqyHAWwFf4EiwWL+zUF9+mLBYsc+5EF++mLBYv7NAX6BIsFi/c0BfvxiwWLHARvBffxiwWL9zUFDhwEzfoA9ykVlvspBfc8iwWL+s4F+06LBYv9nAWBdH51fXgIfHd5end9CIuLBXN6b31qgghqgWaGYosIi4sFaItskHCUCHCUdJx4ogiLiwV4on2pgrIIgrKGu4vGCIuLBYv5GQX7TYsFi/0XBYs6lEadUgicUaRbrGYIi4sFrGayb7l6CLl5voLEiwiLiwXSi8mawakIwai4ta/ACIuLBQ4cBM369fkYFYuLBYv3OgWKv4fAg8AIgsB+v3q8CIuLBXm8dbpwtghwtmqwZqsIi4sFZqtgpFqeCFqdVZRPiwiLiwVPi1WCW3kIWnhgcmZrCIuLBWZqamZxYAhwYHRceloIi4sFeVp+WINWCIJWh1aKVwiLiwWL+zoFjFePV5RWCJRWmFidWgiLiwWcWqJcpmEIpmCsZbBrCIuLBbBrtnK8eQi7eMGCx4sIi4sFx4vBlLyeCLudtqSwqwiLiwWwq6uwp7YIprahuZy8CIuLBZy8mL+UwAiTwI+/jL8I+0v3PBWLiwWL+zwFimiJZ4hlCIdlhGaCZgiLiwWBZn5nfGoIe2l3bXRyCIuLBXNxbnZrfAhqfGSDYIsIi4sFYItlk2qaCGqab6BzpQiLiwVzpHepe60Ie61+r4GwCIuLBYGwhLCHsQiGsYmviq0Ii4sFi/c8BYytja+QsQiPsJKxlbAIi4sFlLCYrputCJusn6mjpQiLiwWjpKegrJoIrJqwk7aLCIuLBbaLsYSsfAisfKd2o3IIi4sFo3GfbZtqCJtpmGiVZgiLiwWUZpJlj2YIj2WNZ4xoCA4cBM0OHATNDhwEzQ4cBM0OHATNDhwEzfcO+LsVi4sFi3UFiz2WQ6JICKJIq1G2WgiLiwW1Wr9kyG8IyG/PfdiLCIuLBdeLz5nIpwjIp76ytrwIi4sFtbyrxaLOCKLOltOL2QiLiwWLoQWL2YDUdM4IdM5rxWG8CIuLBWC8V7JPqAhOp0aZPosIi4sFP4tHfU5vCE5uWGRhWgiLiwVgWmtQdEkIdEiAQos9CPdNdRWLiwWLoQWLwJG9mLwImLuetaWwCIuLBaSwq6ixoQixoLiWvosIi4sFvou4gLJ2CLF1q26lZgiLiwWkZp9hmFsImFqRWYtWCIuLBYt1BYtWhVh+Wwh+WnhhcmYIi4sFcWZrbmV2CGR2X4BYiwiLiwVYi16WZKAIZKBrqHKwCIuLBXGweLV+vAh+u4W+i8AIDhwEzfo8+AQVi4sFi2OCaXpuCHpudHNweAiLiwVweGx9aIIIaIJnhmeLCIuLBV6LYZFlmAhkl2mdbqQIi4sFbqNzqXiuCHiuf7OFuAiLiwX7UYsFjUyZU6VYCKRYrl63ZQiLiwW8X8ZpznQIznTPf9CLCIuLBcWLxZPFnAjFm7+juawIi4sFuauxs6i8CKi8mcSLzAiLiwWLzH7EcLwIcLxntV+tCIuLBV6wWqlVowhVolWfVZwIi4sFapVpl2aYCGaYaJxsnwiLiwVrn3GjdqkIdqiBroq1CIuLBYuyk62bqAiaqKCkpp8Ii4sFpZ+pmq2VCKyVrpCuiwiLiwW3i7OErn4Irn2peKRyCIuLBaRyoG6aaQiaaJZlkGEIi4sF91KLBYrOfMdwwQhwwWa5XrEIi4sFXrFXqVCgCFCgTpVMiwiLiwVSi1KCUnoIUnlZcV5pCIuLBV5pZ2FwWghvWn1Ti0wIi4sFi0yZVaddCKZcr2O3aQiLiwW2arxuwHQIwHO/d756CIuLBa6AsH6yfQixfa56q3YIi4sFq3alcaBsCJ9slWaLXggOHATN95n8SRWLiwW8i7aUsJ0IsJ2soaemCIuLBaemo6ifqgieqpupmKcIi4sF+LkcBOEF+2OLBfur/VIFWPsTBVv3FwX7vflOBftjiwX4Zv6bBUH7JAWEfoJ6gHYIf3Z9d3t4CIuLBXp4eXp2fQh2fXOEcosIi4sFgot+jHuMCHqMe4x6jAiLiwVt+ysFl4idiKKHCKKHoImciwgOHATNDhwEzfdC+s4Vi/7OBfdNiwWL+ZwFmKKaoZyeCJyenZyfmgiLiwWknKaYqJUIqJSrkK2LCIuLBbKLroaqggipgqV8oHYIi4sFoHaacJZqCJZqkGKLWwiLiwWL/T8F902LBYv5QwWL04LJesAIeb9ytmqtCIuLBWqtZKRdmwhcm1iTUosIi4sFYYpjhWaACGV/aHprdgiLiwV2fXd6eHkIeHh5dnt0CIuLBX73NAX7OosFDhwEzfcFixX6TosFi/crBf1viwX4G/g8BbCzrbOttAiss6i0pLQIi4sFpLSetZq2CJq1kraLtgiLiwWLxYHBd7wIdrxutmWvCIuLBWWvXadUoAhUn02VRosIi4sFQItJf1FzCFBzWmtjYgiLiwViYmxcdlUIdlSAUYtOCIuLBfdOiwWLuJG0l7AIlrCdqqOlCIuLBaKkqZ+vmQiumbWSvIsIi4sFs4uvhKt+CKp9pniidAiLiwWhdJxvl2wIlmuRaYtnCIuLBYtuh26EcAiEb35uemwIi4sFemx0aW5mCG5maGFgXAiLiwX8cfymBYv7GQUOHATNDhwEzQ4cBM0OHATN+Pr5bBX7gflsBft5iwWLHPpQBfdIiwWL+NkFfPjfBfeL/Y8F9YsF96H5pAV8/PQFi/zZBfdIiwWLHAWwBft6iwX7lP1sBQ4cBM0OHATN9yD4uhWLiwWLdgWLPpVDn0gIn0ioULBaCIuLBbBauGTAbwjAb8d9zYsIi4sFsouwj62UCK2TqpenmgiLiwWdlZyXm5gImpiampmbCIuLBYsuBYtchGJ+Zwh+Z3htcnMIi4sFcnJseWh+CGh+Y4VfiwiLiwVyi3OOcpAIcpBzk3KWCIuLBXKWc5tznghznnSidKYIi4sFK/sDBaRoqG2ucwitc694sH0Ii4sFsHyvga+FCK+Eq4iniwiLiwXPi8mVw58Iw5+7qLSyCIuLBbOyqrqiwgihwpbLi9IIi4sFi/q3Bfs8iwWC+woFfpt+mn2YCHyYfJd7lQiLiwVunmqaZ5UIZpVjkGCLCIuLBUiLTn1WcAhWcF1lZloIi4sFZlpuUXhICHdHgUGLOgj3TXYVi4sFi6AFi8CRvZa7CJa6nLWjsAiLiwWir6qosKAIsKC3lr+LCIuLBaqLp4ekhAikg6KAoH4Ii4sFoH2de5t4CJt4mXeXdAiLiwWL/IQFf3R9dXt4CHt4eXp3fQiLiwV2fXSAcoQIcYNuh2uLCIuLBViLX5ZmoAhmoG2ndK8Ii4sFc696tYC6CIC6hb2LwAgOHATN+iL6zhX7tfwlBfuy+CUF+2qLBfgn/KsF/DL8twX3bIsF97/4MAX3v/wwBfdqiwX8Mvi3Bfgn+KsF+22LBQ4cBM0OHATN+hH3sxWLiwWLeoh6hHwIhHyCfX5+CIuLBXZ2b3tmgAhmf2CFWosIi4sFbItrjmuSCGuSbpZxmwiLiwVwm3WgeqUIeaWBq4ixCIuLBftNiwWLXZZfoGAIoGCpZrNrCIuLBbJqvHHEeAjEd82B1IsIi4sFy4vGk8GaCMGauaGypwiLiwWyp6mtobIIoLKWt4u7CIuLBYu4grJ4rQh4rW+pZ6UIi4sFZ6RfoVaeCFadUJtImQiLiwVYlWKVapYIapZwl3iYCIuLBXeYfZqDnAiDnIeei6AIi4sFi6CQn5WeCJWempyfmgiLiwWemqSWqZQIqJSuj7KLCIuLBbGLrYaqgAipgKV9oHoIi4sFoHqcd5d1CJd0kXSLdAiLiwX3TYsFi7qBuHe0CHa0bq5mqgiLiwVmql2jVpwIVpxPlEiLCIuLBU2LUoNYeghXel51Zm4Ii4sFZm5uanZlCHZkgWKLXwiLiwWLXpVkn2oIn2mnbrByCIuLBa9yt3W+eQi+ecN8yX4Ii4sFvoG1gK1/CK1+pn6gfAiLiwWgfJl7lHoIlHmPd4t1CA4cBM33/vgKFfcc9xcF+CH8jQX3f4sF/I35CwX4SvhXBft1iwX79/v4BfsN+xYFi/pABftOiwWLHPoABfdOiwWL+AoFDhwEzQ4cBM0OHATNDhwEzfgT+A0V+HqLBfcH/A0F90yLBfxiHAWwBfsviwX8ahz6UAX3TYsF9wn4DQX4Sfc1FfwXiwX3V/kMBfdU/QwFDhwEzfmIHAYAFfy9iwWL+zUF+ASLBYsc+0EF/ASLBYv7NAX6HosFi/c0Bfv1iwWLHAVgBQ4cBM0OHATNDhwEzQ4cBM34Vvo/FYv+PwX3TosFi/o/Bfg1iwWL9yMF/DWLBYvXBYu4kbOXrQiWrZynoqAIi4sFoKCmmqyWCKuVsJC1iwiLiwW0i7KIsIQIr4SrgqaCCIuLBaH3LQV6kHqPeo8Ieo57j3qOCIuLBXKQcY5xjwhxjnGMcIsIi4sFS4tRgld5CFd5X3BmaAiLiwVmaG5fd1cIdlaBTotGCIuLBYs/Bfu+iwWL+yMF976LBQ4cBM0OHATN+SB3FYuLBfSL5KDTtgjStcG7r8IIi4sF+wXjBWlfYGhYcAhYcFB+SYsIi4sFWYtdlGKeCGKeZ6RurAiLiwVuqnWue7MIerOBuYbACIuLBYuSBfmZiwWL3gWL1oLReMwIeMxuw2S7CIuLBWS6W7FRpghQpkeYPYsIi4sFTYtOflFyCFByVmZdXAiLiwVcW2ZRb0YIb0Z9PIs0CIuLBYthBYtAmEWkSwikS69UuFwIi4sFuFzCZ8txCMpx0X7Xiwhz+l4Vi4sFuou0gq56CK16p3SibwiLiwWib5xqmGUImGSRZ4tqCIuLBYuCBfzaiwWSvZi3nrIInbGhq6amCIuLBaalqZ+smQismK+SsIsIDgAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAABM0AAATNAAAEzQAA') format('truetype');
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .encrypted {
+      font-family: 'EncryptedFont', monospace;
+      color: purple;
+    }
+
+    * {
+      font-family: "Roboto Mono", monospace;
+      /* font-optical-sizing: auto; */
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    strong {
+      font-weight: bold;
+    }
+
+    body {
+      padding: 5px 10%;
+    }
+
+    main {
+      border: 1px solid black;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>
+    Scoretaking time!
+  </h1>
+  <p>Today we're taking score. Refer to this guide on how to do it.</p>
+  <ol>
+    <li>
+      Prepare an empty Microsoft Word document. Add <strong>page numbers</strong> in it and exit the header and footer
+      section.
+    </li>
+    <li>
+      <strong>Copy</strong> the entirety of these article into below Microsoft Word. There purple part here will be
+      replaced with gibberish
+      in your document, but don't worry about it yet.
+    </li>
+    <li>
+      Change the font to something else that you like. Don't forget to format the titles correctly (make it bigger
+      than any other text).
+    </li>
+    <li>
+      <strong>Rewrite the entire purple part</strong> (that has become gibberish when you paste) in Microsoft Word with
+      its actual text.
+    </li>
+    <li>
+      Make everything into <strong>two columns</strong>.
+    </li>
+    <li>
+      Add some <strong>pictures</strong>, at least one of them. Maybe the portrait of Eratosthenes himself, his
+      calculation, or simply the Earth. Please take it from google. It is best for you to use square wrap text.
+    </li>
+  </ol>
+
+  <p>What will I score?</p>
+  <ul>
+    <li>The completeness of your text. (40%)</li>
+    <li>Whether you can format it into two columns or not. (25%)</li>
+    <li>The existence of page numbering. (25%)</li>
+    <li>The existence of picture(s). (10%)</li>
+    <li>Bonus: You format your document nicely.</li>
+  </ul>
+  <p>Good luck!</p>
+
+  <main>
+    <h1>How Eratosthenes Measured the Earth</h1>
+    <p>
+      Imagine standing on the ground and looking up at the sky. You see the sun shining bright, but have you ever
+      wondered how far away it is? Or even how big the Earth is? Well, a long, long time ago, a smart scientist named
+      Eratosthenes had a brilliant idea for figuring out just how big the Earth really is—without traveling around the
+      world! Let's take a trip back in time and discover how Eratosthenes figured out the Earth's size using just simple
+      tools and some clever thinking.
+    </p>
+    <p>
+
+      Eratosthenes was an ancient Greek scholar who lived over 2,000 years ago, in a time before anyone had ever
+      traveled
+      into space to take pictures of Earth. He was curious about the world around him and loved solving puzzles. He was
+      the chief librarian at the famous Library of Alexandria, where scholars from all over came to learn and share
+      knowledge. One day, he had an idea that would change the way we understand our planet.</p>
+
+    <h2>The Big Question: How Big is the Earth?</h2>
+    <p>
+
+      Eratosthenes knew that Earth was round, but no one really knew exactly how big it was. The problem was that the
+      Earth
+      is really big, and without any airplanes or satellites, there was no easy way to measure its size. But
+      Eratosthenes
+      wasn't the type of person to give up that easily. He figured that if he could measure the angle of the sun's rays
+      at
+      two different places, he could use math to figure out how big the Earth was. Sounds tricky, right? But let's break
+      it
+      down step by step.
+    </p>
+    <p class="encrypted">
+      ZIRCjxCL9n9x 3HB9O Hn 239vRnOIHR, R YHCl Hn ZulGC, ELHYL Hx Vl CL9 s9OHC9IIRn9Rn k9R. J9 yn9E CLRC CL9I9 ERx
+      RnjCL9I YHCl YR339O kl9n9 (njE 2xERn) CLRC ERx GI9CCl 7RI xjcCL 7IjN 239vRnOIHR. J9 7jcnO jcC CLRC kl9n9 ERx xj
+      7RI xjcCL CLRC EL9n CL9 xcn ERx OHI9YC3l jB9IL9RO RC njjn OcIHnu CL9 xcNN9I, G9jG39 CL9I9 OHOn'C YRxC Rnl xLROjEx
+      RC R33! DLRC'x GI9CCl Yjj3, IHuLC? bC ERx Rx H7 CL9 xcn ERx xLHnHnu xCIRHuLC OjEn.
+    </p>
+    <p class="encrypted">
+      XjE, HNRuHn9 ljc'I9 Hn 239vRnOIHR RC njjn. DL9 xcn Hx cG Hn CL9 xyl, VcC HC'x njC OHI9YC3l jB9IL9RO. bnxC9RO, HC'x
+      RC Rn Rnu39. DLHx OH779I9nY9 Hn LjE CL9 xcn xLHn9x jn CEj G3RY9x Hx CL9 y9l Cj ZIRCjxCL9n9x' HO9R.
+    </p>
+    <p class="encrypted">
+      dn CL9 ORl j7 LHx 9vG9IHN9nC, ZIRCjxCL9n9x Rxy9O xjN9jn9 Hn kl9n9 Cj N9RxcI9 CL9 GjxHCHjn j7 CL9 xcn. DL9l
+      Yjn7HIN9O CLRC CL9I9 ERx nj xLROjE RC R33, ELHYL N9RnC CL9 xcn ERx OHI9YC3l jB9IL9RO. s9RnELH39, ZIRCjxCL9n9x
+      xCRl9O Hn 239vRnOIHR RnO N9RxcI9O CL9 xLROjE j7 R CR33 xCHYy, YR339O Rn jV93Hxy, RC njjn. J9 xRE CLRC CL9 xcn
+      ERxn'C OHI9YC3l jB9IL9RO RnO CLRC CL9I9 ERx R xNR33 xLROjE. Tl N9RxcIHnu CL9 39nuCL j7 CL9 xLROjE, L9 Yjc3O 7HucI9
+      jcC CL9 Rnu39 V9CE99n CL9 xcn RnO CL9 uIjcnO Hn 239vRnOIHR.
+    </p>
+    <p class="encrypted">
+      kj L9I9'x ELRC L9 OHO: ZIRCjxCL9n9x N9RxcI9O CL9 Rnu39 j7 CL9 xLROjE Hn 239vRnOIHR RnO 7jcnO CLRC HC ERx RVjcC a.o
+      O9uI99x. DLRC'x R GI9CCl xNR33 Rnu39, IHuLC? TcC I9N9NV9I, HC'x R I9R33l HNGjICRnC Y3c9. DLHx Rnu39 C933x LHN LjE
+      NcYL j7 CL9 ZRICL'x xcI7RY9 CL9 xcn'x IRlx RI9 LHCCHnu Hn 239vRnOIHR YjNGRI9O Cj kl9n9.
+    </p>
+
+    <h2>The Mathematics</h2>
+    <p>
+      Now comes the really clever part—math! Eratosthenes knew that the 7.2-degree angle was part of the total
+      360-degree
+      circle around the Earth. Think of it like a pizza: If you cut out a slice that is 7.2 degrees, how much of the
+      pizza
+      is left?
+    </p>
+    <p>
+      By using simple math, Eratosthenes figured out that the distance between Alexandria and Syene must be about 1/50th
+      of the way around the Earth. So, if you imagine that the Earth is like a giant circle, the distance between the
+      two
+      cities was one tiny slice of it.
+    </p>
+    <p>
+      Next, Eratosthenes used the known distance between Alexandria and Syene—about 800 kilometers (or 500 miles)—to
+      figure out how big the whole Earth must be. If 800 kilometers was 1/50th of the Earth's circumference (the
+      distance
+      all the way around), then multiplying 800 by 50 gives us 40,000 kilometers (about 24,860 miles) for the Earth's
+      total circumference!
+    </p>
+
+    <h2>How Close Was Eratosthenes?</h2>
+    <p>
+      Surprisingly, Eratosthenes' calculation was really close! The actual circumference of the Earth is around 40,075
+      kilometers (24,901 miles). His measurement was only off by a tiny bit! This means that even though he didn't have
+      the technology we have today, he was able to come up with a remarkably accurate answer using just math, basic
+      tools,
+      and a lot of curiosity.
+    </p>
+    <p>
+      Eratosthenes' experiment was amazing because it was one of the first times anyone tried to figure out the size of
+      the Earth in such a scientific way. Before this, many people thought the Earth was flat or that it was much
+      smaller
+      than it really is. His work helped people understand that the Earth is round and that it's much larger than anyone
+      had imagined.
+    </p>
+    <p>
+      Not only did Eratosthenes' experiment help teach us about the size of our planet, but it also showed how powerful
+      curiosity and clever thinking can be! By just measuring shadows and using simple math, he was able to unlock a
+      huge
+      mystery.
+    </p>
+
+    <h2>What Can You Learn from Eratosthenes</h2>
+    <p>
+      So, what can you take away from Eratosthenes' experiment? Well, it shows that even when something seems impossible
+      or huge, you can figure it out by breaking it down into smaller pieces. Whether it's measuring the Earth or
+      solving
+      a tricky problem, thinking carefully and using what you already know can help you find the answer.
+    </p>
+    <p>
+      Who knows? Maybe you'll come up with a brilliant idea of your own to solve a big mystery! Just like Eratosthenes,
+      all it takes is curiosity, a bit of math, and a willingness to think outside the box.
+    </p>
+  </main>
+</body>
+
+</html>
